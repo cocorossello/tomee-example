@@ -1,6 +1,6 @@
 package com;
 
-import com.tr2.util.interceptor.Async;
+import com.tr2.util.interceptor.async.Async;
 import java.util.concurrent.Future;
 import javax.ejb.AsyncResult;
 import javax.ejb.Stateless;

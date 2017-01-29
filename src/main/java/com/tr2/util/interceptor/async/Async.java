@@ -1,4 +1,4 @@
-package com.tr2.util.interceptor;
+package com.tr2.util.interceptor.async;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;

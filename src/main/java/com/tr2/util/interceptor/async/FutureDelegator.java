@@ -1,4 +1,4 @@
-package com.tr2.util.interceptor;
+package com.tr2.util.interceptor.async;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;

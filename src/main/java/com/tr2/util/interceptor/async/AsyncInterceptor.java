@@ -1,4 +1,4 @@
-package com.tr2.util.interceptor;
+package com.tr2.util.interceptor.async;
 
 import java.io.Serializable;
 import java.util.concurrent.Future;
