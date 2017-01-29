@@ -1,5 +1,6 @@
-package com.tr2.util.interceptor.async;
+package com.tr2.test;
 
+import com.tr2.util.interceptor.async.Async;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;

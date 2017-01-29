@@ -1,5 +1,8 @@
 package com.tr2.util.interceptor.async;
 
+import com.tr2.test.MyStateless;
+import com.tr2.test.MyAsyncStateless;
+import com.tr2.test.MyOtherAsyncStateless;
 import javax.inject.Inject;
 import org.apache.openejb.jee.WebApp;
 import org.apache.openejb.junit.ApplicationComposer;
@@ -11,8 +14,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(ApplicationComposer.class)
-@Descriptors(
-        @Descriptor(name = "resources.xml", path = "test-resources.xml"))
+@Descriptors({
+    @Descriptor(name = "resources.xml", path = "test-resources.xml")
+})
 public class AsyncInterceptorIT {
 
     @Inject
@@ -29,7 +33,7 @@ public class AsyncInterceptorIT {
     }
 
     @Test
-    public void test1() {
+    public void thread_are_stuck() {
         stateless.sayHello();
     }
 }
