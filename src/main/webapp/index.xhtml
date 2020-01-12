@@ -1,26 +1,24 @@
 <!DOCTYPE html [
-    <!ENTITY nbsp "&#160;">
-    <!ENTITY times "&#215;">
-    ]>
-    <html xmlns="http://www.w3.org/1999/xhtml"
-          xmlns:h="http://java.sun.com/jsf/html"
-          xmlns:f="http://java.sun.com/jsf/core"
-          xmlns:ui="http://java.sun.com/jsf/facelets"
-          xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
-          xmlns:c="http://java.sun.com/jsp/jstl/core">
+        <!ENTITY nbsp "&#160;">
+        <!ENTITY times "&#215;">
+        ]>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
 
-        <f:view contentType="text/html" > 
-            <f:metadata>
-                <f:viewAction onPostback="true" action="#{helloBean.doSomething()}"/>
-            </f:metadata>
+<f:view contentType="text/html">
+    <ui:remove>
+        <h:head></h:head>
+    </ui:remove>
+    <h:body role="document">
+        hello
+        <h:form>
+            <h:commandLink >This link throws js exception in 2.3</h:commandLink>
+        </h:form>
+    </h:body>
 
-            <h:head>
-
-            </h:head>
-
-            <h:body role="document" >
-                hello
-            </h:body>
-
-        </f:view>
-    </html>
+</f:view>
+</html>
